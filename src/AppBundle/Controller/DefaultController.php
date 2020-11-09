@@ -16,7 +16,7 @@ class DefaultController extends Controller
     {
         $a = 123;
 
-        return $this->render('default/index.html.twig',
+        return $this->render('@App/default/index.html.twig',
         [
             'a' => $a,
         ]);
@@ -26,6 +26,6 @@ class DefaultController extends Controller
      */
     public function feedbackAction()
     {
-        return $this->render('feedback.html.twig');
+        return $this->render('@App/feedback.html.twig');
     }
 }
